@@ -57,12 +57,12 @@ export const nav = [
 export type Img = { src?: string; label: string; alt?: string };
 
 export const photos = {
-  hero: { src: "", label: "Hero: finished garden, wide", alt: "A completed Brownview garden in Sydney" } as Img,
-  introA: { src: "", label: "Team on site, planting", alt: "Brownview landscapers planting a garden bed" } as Img,
-  introB: { src: "", label: "Close-up: paving detail", alt: "Sandstone paving detail" } as Img,
-  aboutTeam: { src: "", label: "The Brownview team", alt: "The Brownview Landscaping team" } as Img,
-  aboutFounder: { src: "", label: "Founder portrait", alt: "Brownview founder on site" } as Img,
-  ctaBand: { src: "", label: "Wide: courtyard at dusk", alt: "A landscaped Sydney courtyard at dusk" } as Img,
+  hero: { src: "/photos/hero.jpg", label: "Hero: finished garden, wide", alt: "A completed Brownview garden in Sydney" } as Img,
+  introA: { src: "/photos/intro-a.jpg", label: "Team on site, planting", alt: "Brownview landscapers planting a garden bed" } as Img,
+  introB: { src: "/photos/intro-b.jpg", label: "Close-up: paving detail", alt: "Sandstone paving detail" } as Img,
+  aboutTeam: { src: "/photos/about-team.jpg", label: "The Brownview team", alt: "The Brownview Landscaping team" } as Img,
+  aboutFounder: { src: "/photos/about-founder.jpg", label: "Founder portrait", alt: "Brownview founder on site" } as Img,
+  ctaBand: { src: "/photos/cta-band.jpg", label: "Wide: courtyard at dusk", alt: "A landscaped Sydney courtyard at dusk" } as Img,
 };
 
 // ---------------------------------------------------------------
@@ -86,7 +86,7 @@ export const services: Service[] = [
     body:
       "Every build starts on paper. We measure the site, work out how you actually want to use the space, and draw a plan that accounts for drainage, sun, soil and access before anything gets quoted.",
     includes: ["Site measure and consultation", "Concept plan and revisions", "Planting schedule", "Materials and finishes selection", "Staged build options"],
-    image: { src: "", label: "Design plan on site", alt: "Landscape design plan" },
+    image: { src: "/photos/service-design.jpg", label: "Design plan on site", alt: "Landscape design plan" },
   },
   {
     slug: "landscape-construction",
@@ -95,7 +95,7 @@ export const services: Service[] = [
     body:
       "Excavation, drainage, structures, paving, planting and finishing, run by the same crew that quoted the job. No subcontractor roulette, no gaps between trades where the schedule falls apart.",
     includes: ["Excavation and site prep", "Drainage and levels", "Structural work", "Paving and hardscaping", "Planting and turf", "Final clean and handover"],
-    image: { src: "", label: "Construction in progress", alt: "Landscape construction underway" },
+    image: { src: "/photos/service-construction.jpg", label: "Construction in progress", alt: "Landscape construction underway" },
   },
   {
     slug: "garden-makeovers",
@@ -104,7 +104,7 @@ export const services: Service[] = [
     body:
       "Not every garden needs demolishing. Often the bones are good and the planting, edging and surfaces just need rethinking. Makeovers are a smaller commitment with a fast, visible result.",
     includes: ["Clearing and pruning", "Soil improvement", "New planting", "Edging and mulch", "Feature areas"],
-    image: { src: "", label: "Garden makeover, after", alt: "Refreshed garden bed" },
+    image: { src: "/photos/service-makeover.jpg", label: "Garden makeover, after", alt: "Refreshed garden bed" },
   },
   {
     slug: "paving-hardscaping",
@@ -113,7 +113,7 @@ export const services: Service[] = [
     body:
       "Most paving failures come from what is underneath, not the stone on top. We build the base properly, set the falls so water goes where it should, and finish edges so nothing creeps or sinks.",
     includes: ["Sandstone, travertine, concrete and pavers", "Correct base preparation", "Drainage falls", "Cut and edge detailing", "Sealing where required"],
-    image: { src: "", label: "Paved patio, finished", alt: "Finished paved patio" },
+    image: { src: "/photos/service-paving.jpg", label: "Paved patio, finished", alt: "Finished paved patio" },
   },
   {
     slug: "retaining-walls",
@@ -122,7 +122,7 @@ export const services: Service[] = [
     body:
       "Sydney blocks slope. Retaining walls hold that ground back for decades if the drainage and footings are right. Walls over one metre get engineering and, where required, council approval, which we handle.",
     includes: ["Sandstone, block and timber", "Drainage behind the wall", "Engineering for walls over 1m", "Council approval assistance", "Integrated steps and garden beds"],
-    image: { src: "", label: "Retaining wall build", alt: "Sandstone retaining wall" },
+    image: { src: "/photos/service-retaining.jpg", label: "Retaining wall build", alt: "Sandstone retaining wall" },
   },
   {
     slug: "turf-lawns",
@@ -131,7 +131,7 @@ export const services: Service[] = [
     body:
       "Good turf is mostly good preparation. We remove the old lawn, correct the levels, improve the soil and lay fresh turf with a watering plan you can actually follow for the first month.",
     includes: ["Old lawn removal", "Level correction", "Soil preparation and underlay", "Turf supply and laying", "Establishment plan"],
-    image: { src: "", label: "Fresh turf laid", alt: "Newly laid lawn" },
+    image: { src: "/photos/service-turf.jpg", label: "Fresh turf laid", alt: "Newly laid lawn" },
   },
   {
     slug: "outdoor-living",
@@ -140,7 +140,7 @@ export const services: Service[] = [
     body:
       "Outdoor rooms only work if they are comfortable at the times you actually want to sit outside. We plan shade, shelter, lighting and power alongside the structure, not after it.",
     includes: ["Decking and platforms", "Pergolas and shade structures", "Courtyard design", "Outdoor lighting", "Built-in seating and screening"],
-    image: { src: "", label: "Deck and pergola", alt: "Outdoor living area with pergola" },
+    image: { src: "/photos/service-outdoor-living.jpg", label: "Deck and pergola", alt: "Outdoor living area with pergola" },
   },
   {
     slug: "garden-maintenance",
@@ -149,7 +149,7 @@ export const services: Service[] = [
     body:
       "A new garden is at its most vulnerable in the first two seasons. Scheduled maintenance keeps planting healthy, edges sharp and problems small, on a visit frequency that suits the site.",
     includes: ["Scheduled visits", "Pruning and hedging", "Mulching and feeding", "Weed and pest management", "Irrigation checks"],
-    image: { src: "", label: "Maintenance visit", alt: "Gardener maintaining a garden bed" },
+    image: { src: "/photos/service-maintenance.jpg", label: "Maintenance visit", alt: "Gardener maintaining a garden bed" },
   },
 ];
 
@@ -187,8 +187,8 @@ export const projects: Project[] = [
     scope: ["Landscape design", "Paving", "Planting", "Lighting"],
     body:
       "A narrow, unused side courtyard turned into the part of the house they sit in most. Travertine underfoot, a raised planter along the boundary, and low lighting so it works after dark.",
-    before: { src: "", label: "Before: bare side courtyard", alt: "Courtyard before landscaping" },
-    after: { src: "", label: "After: finished courtyard", alt: "Courtyard after landscaping" },
+    before: { src: "/photos/banksia-courtyard-before.jpg", label: "Before: bare side courtyard", alt: "Courtyard before landscaping" },
+    after: { src: "/photos/banksia-courtyard-after.jpg", label: "After: finished courtyard", alt: "Courtyard after landscaping" },
   },
   {
     slug: "hillside-terraces",
@@ -198,8 +198,8 @@ export const projects: Project[] = [
     scope: ["Retaining walls", "Drainage", "Steps", "Turf"],
     body:
       "A steep back yard nobody could stand on, cut into three usable terraces. Sandstone walls, proper drainage behind each one, and steps that make the whole slope walkable.",
-    before: { src: "", label: "Before: steep unusable slope", alt: "Sloped yard before terracing" },
-    after: { src: "", label: "After: terraced garden", alt: "Terraced garden after landscaping" },
+    before: { src: "/photos/hillside-terraces-before.jpg", label: "Before: steep unusable slope", alt: "Sloped yard before terracing" },
+    after: { src: "/photos/hillside-terraces-after.jpg", label: "After: terraced garden", alt: "Terraced garden after landscaping" },
   },
   {
     slug: "willow-street-frontage",
@@ -209,8 +209,8 @@ export const projects: Project[] = [
     scope: ["Garden makeover", "Planting", "Edging", "Turf"],
     body:
       "The bones were good, the planting was not. We cleared thirty years of overgrowth, kept the two established trees worth keeping, and replanted around them with a scheme that suits the aspect.",
-    before: { src: "", label: "Before: overgrown front garden", alt: "Front garden before makeover" },
-    after: { src: "", label: "After: replanted frontage", alt: "Front garden after makeover" },
+    before: { src: "/photos/willow-street-frontage-before.jpg", label: "Before: overgrown front garden", alt: "Front garden before makeover" },
+    after: { src: "/photos/willow-street-frontage-after.jpg", label: "After: replanted frontage", alt: "Front garden after makeover" },
   },
   {
     slug: "north-ryde-poolside",
@@ -220,8 +220,8 @@ export const projects: Project[] = [
     scope: ["Paving", "Drainage", "Planting", "Screening"],
     body:
       "Old pool surrounds that had lifted and cracked, replaced with a properly based travertine surround. Screen planting along the fence line gives the whole area privacy it never had.",
-    before: { src: "", label: "Before: cracked pool surround", alt: "Pool area before paving" },
-    after: { src: "", label: "After: new pool surround", alt: "Pool area after paving" },
+    before: { src: "/photos/north-ryde-poolside-before.jpg", label: "Before: cracked pool surround", alt: "Pool area before paving" },
+    after: { src: "/photos/north-ryde-poolside-after.jpg", label: "After: new pool surround", alt: "Pool area after paving" },
   },
   {
     slug: "carlingford-lawn",
@@ -231,8 +231,8 @@ export const projects: Project[] = [
     scope: ["Turf installation", "Levelling", "Irrigation"],
     body:
       "A back lawn that had turned to compacted clay and weeds. Stripped, re-levelled to fix a drainage problem at the back fence, then new turf with irrigation run underneath.",
-    before: { src: "", label: "Before: patchy compacted lawn", alt: "Lawn before returfing" },
-    after: { src: "", label: "After: established new lawn", alt: "Lawn after returfing" },
+    before: { src: "/photos/carlingford-lawn-before.jpg", label: "Before: patchy compacted lawn", alt: "Lawn before returfing" },
+    after: { src: "/photos/carlingford-lawn-after.jpg", label: "After: established new lawn", alt: "Lawn after returfing" },
   },
   {
     slug: "gladesville-garden-rooms",
@@ -242,8 +242,8 @@ export const projects: Project[] = [
     scope: ["Landscape design", "Construction", "Decking", "Planting"],
     body:
       "One long flat block, designed as three connected spaces instead of one big empty rectangle. A deck off the house, a planted middle, and a screened work area at the rear.",
-    before: { src: "", label: "Before: empty flat block", alt: "Yard before landscape design" },
-    after: { src: "", label: "After: three garden rooms", alt: "Yard after landscape design" },
+    before: { src: "/photos/gladesville-garden-rooms-before.jpg", label: "Before: empty flat block", alt: "Yard before landscape design" },
+    after: { src: "/photos/gladesville-garden-rooms-after.jpg", label: "After: three garden rooms", alt: "Yard after landscape design" },
   },
 ];
 

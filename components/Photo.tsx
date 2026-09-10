@@ -9,8 +9,9 @@ export default function Photo({
   tone?: "sage" | "clay" | "stone"; priority?: boolean; zoom?: boolean; hideLabel?: boolean;
 }) {
   if (src) {
+    const positionClass = className.includes("absolute") ? "" : "relative";
     return (
-      <div className={`relative overflow-hidden ${className}`}>
+      <div className={`${positionClass} overflow-hidden ${className}`}>
         <Image src={src} alt={alt ?? label} fill priority={priority}
           sizes="(max-width: 768px) 100vw, 50vw"
           className={`object-cover ${zoom ? "transition-transform duration-700 hover:scale-105" : ""}`} />
@@ -24,9 +25,10 @@ export default function Photo({
     stone: { bg: "#E8E3DA", fg: "#5C574F" },
   }[tone];
 
+  const positionClass = className.includes("absolute") ? "" : "relative";
   return (
     <div role="img" aria-label={`Photo placeholder: ${label}`}
-      className={`relative flex items-end overflow-hidden ${className}`}
+      className={`${positionClass} flex items-end overflow-hidden ${className}`}
       style={{ backgroundColor: tones.bg }}>
       <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden>
         <defs>
