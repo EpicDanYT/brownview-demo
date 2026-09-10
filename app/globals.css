@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-cream text-char font-sans; }
+  ::selection { background: #1F3D2B; color: #FBF8F3; }
+  :focus-visible { outline: 3px solid #8A5A3B; outline-offset: 3px; border-radius: 3px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-[1220px] px-6 sm:px-10; }
+  .display { @apply font-display font-semibold tracking-[-0.02em] leading-[1.02]; }
+  .btn { @apply inline-flex items-center justify-center rounded-full px-7 py-3.5 text-base font-semibold transition-all duration-200; }
+  .btn-clay { @apply btn bg-clay text-cream hover:bg-clay-deep hover:-translate-y-0.5; }
+  .btn-forest { @apply btn bg-forest text-cream hover:bg-forest-deep hover:-translate-y-0.5; }
+  .btn-outline { @apply btn border border-char/25 text-char hover:border-forest hover:bg-forest hover:text-cream; }
+  .btn-outline-cream { @apply btn border border-cream/40 text-cream hover:bg-cream hover:text-forest; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.18em] text-clay; }
+  .lede { @apply text-xl leading-relaxed text-char-soft sm:text-2xl; }
+  .body-text { @apply text-lg leading-relaxed text-char-soft; }
+}
