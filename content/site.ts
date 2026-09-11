@@ -34,7 +34,7 @@ export const site = {
 
   // Paste a free Web3Forms access key (web3forms.com) to receive real
   // enquiries by email. Leave "" and forms open the visitor's mail app.
-  formAccessKey: "",
+  formAccessKey: "bced7dc7-8084-4e94-a9de-a43bb3062ebe",
 
   url: "",
 } as const;
